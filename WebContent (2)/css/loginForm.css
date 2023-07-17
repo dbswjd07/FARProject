@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.wrap {
+		
+	}
+	.login_logo {
+		width: 20%;
+		height: 0px;
+		margin: 200px auto 100px;
+		padding: 0 auto;
+		text-align: center;
+		font-size: 70px;
+		color: skyblue;
+	}
+	
+	.login_form {
+		width: 40%;
+		height: 350px;
+		margin: 0 auto;
+		border: 1px solid gray;
+		text-align: center;
+		border-collapse: collapse;
+	}
+	
+	.id {
+		width: 60%;
+		height: 45px;
+		margin-top: 50px;
+		border-bottom: none;
+		background-image: url("booking.png");
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: 20px;
+		background-origin: content-box;
+		padding-left: 10px;
+	}
+	
+	.pwd {
+		width: 60%;
+		height: 45px;
+		background-image: url("booking.png");
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: 20px;
+		background-origin: content-box;
+		padding-left: 10px;
+	}
+	
+	.submit {
+		width:60%;
+		height: 45px;
+		margin-top: 25px;
+	}
+	
+	span {
+		color: lightgray;
+	}

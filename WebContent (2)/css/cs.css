@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.csMenu {
+	display: flex;
+	margin-top: 80px;
+}
+
+.csMenu>div {
+	width: 20%;
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+}
+
+.commonCS {
+	background-color: pink;
+}
+
+.accommodationsCS {
+	background-color: yellow;
+}
+
+.restaurantCS {
+	background-color: skyblue;
+}
+
+.beautyCS {
+	background-color: aqua;
+}
+
+.artCS {
+	background-color: green;
+}
+
+.csBoard {
+	width: 93%;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+.cs_question_line {
+	display: flex;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	margin-bottom: 10px;
+	background-color: rgb(250, 224, 212, 0.2);
+}
+
+.cs_question {
+	width: 90%;
+	height: 50px;
+	line-height: 50px;
+}
+
+.cs_down_arrow {
+	display: flex;
+	justify-content: center;
+	width: 10%;
+}
+
+.cs_down_arrow img {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin: auto;
+}
+
+.cs_answer_line {
+	background-color: rgb(250, 224, 212, 0.2);
+	opacity: 0;
+	height: 0;
+	transition: opacity 0.3s ease, height 0.3s ease; /* 트랜지션 속성 추가 */
+	overflow: hidden;
+	padding-left: 30px;
+}
+
+
+.cs_answer_line.show {
+  height: auto;
+  opacity: 1;
+ 
+}
+
+
+
+
+
+
+
+
+
+

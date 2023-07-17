@@ -1,0 +1,178 @@
+@charset "UTF-8";
+.shop_List{
+	display: flex;
+	margin-top: 15px;
+}
+.filter{
+	height: 1300px;
+	width: 20%;
+	background-color: rgba(0,0,0,0.08);
+	margin-right: 20px;
+	border-radius: 10px;
+	
+}
+
+.filter_top{
+	display: flex;
+	margin-bottom: -10px; 
+	
+}
+.filter_top button{
+	width: 100px;
+	height: 30px;
+	margin-top: 10px;
+}
+.filter_top button:active{
+	border: solid 1px rgba(0,0,0,0.5);
+	border-radius: 10px;
+}
+
+.filter_top h3{
+	margin-left: 20px;
+}
+
+.filter_top button{
+	font-size: 10pt;
+	margin-left: 30px;
+	border: none;
+	background-color: transparent;
+}
+
+.price_range{
+	margin-left: 15px;
+	color: black;
+}
+.price_range input{
+	width: 163px;
+}
+.price_input{
+	display: flex;
+	
+}
+
+.price_input input{
+	width: 60px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.apoint_option{
+	margin-left: 20px;
+}
+
+
+.star {
+	margin-left: 20px;
+}
+
+.theme {
+	margin-left: 20px;
+}
+.grade{
+	margin-left: 20px;
+}
+.additional_facilities{
+	margin-left: 20px;
+}
+
+
+.filter hr{
+	width: 90%;
+	margin-top: 20px;
+}
+.list_page{
+	width: 80%;
+}
+.list_top{
+	display: flex;
+	margin-top: -5px;
+}
+.list_top ul{
+   display: flex;
+   list-style: none;
+   text-align: right;
+}
+.list_top img{
+	margin-left: -20px;
+	margin-right: 5px;
+	width: 30px;
+	height: 30px;
+}
+.sort:hover{
+	font-weight: bold;
+}
+.list_main{
+	margin-top: -10px;
+}
+
+.region_name{
+	font-size: 15pt;
+	font-weight: bold;
+}
+
+.space{
+	margin-left: 350px;
+}
+
+.page_number{
+	text-align: center;
+}
+
+.list_div{
+	display: flex;
+}
+
+.list_div img{
+	width: 250px;
+	height: 180px;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.list_cont{
+	margin-left: 15px;
+	margin-top: -5px;
+}
+.list_cont p{
+	font-size:10pt;
+}
+.list_cont2{
+	margin-left: 170px;
+	position: inherit;
+	margin-top: -15px;
+}
+
+.list_cont button{
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	border: none;
+}
+
+.shop_JJim{
+	display: flex;
+}
+.shop_JJim button{
+	width: 40px;
+	height: 40px;
+	border: none;
+	background-color: transparent;
+}
+.shop_JJim img{
+	margin-top: 5px;
+	margin-left: 0px;
+	width: 23px;
+	height: 23px;
+	display: flex;
+}
+.separator {
+   margin-right: 4px;
+   margin-left: 4px;
+}
+
+#yes{
+	display: none;
+}
+
+
+

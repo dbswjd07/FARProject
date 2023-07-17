@@ -1,0 +1,71 @@
+@charset "UTF-8";
+.wrap {
+		
+	}
+	.sign_up_logo {
+		width: 20%;
+		height: 0px;
+		margin: 100px 100px;
+		padding: 0 auto;
+		text-align: center;
+		font-size: 70px;
+		color: skyblue;
+	}
+	
+	.joinForm {
+		width: 65%;
+		height: 500px;
+		margin: 0 auto;	
+		text-align:center;
+	}
+	
+	.joinId {
+		width: 60%;
+		height: 45px;
+		margin: 0 auto;
+		margin-top: 40px;
+		border-bottom: none;
+		padding-left: 10px;
+	}
+	
+	.joinPwd {
+		width: 60%;
+		height: 45px;
+		border-bottom: none;
+		padding-left: 10px;
+	}
+	
+	.joinMail {
+		width: 60%;
+		height: 45px;
+		padding-left: 10px;
+	}
+	
+	.joinName {
+		width: 60%;
+		height: 45px;
+		margin-top: 20px;
+		border-bottom: none;
+		padding-left: 10px;
+	}
+	
+	.joinBirth {
+		width: 60%;
+		height: 45px;
+		padding-left: 10px;
+	}
+	.submit {
+		width:60%;
+		height: 45px;
+		margin-top: 25px;
+	}
+	
+	.signupSubmit {
+		margin-top: 20px;
+		width: 60%;
+		height: 30px;
+	}
+	
+	::placeholder {
+  		text-decoration: underline;
+	}
