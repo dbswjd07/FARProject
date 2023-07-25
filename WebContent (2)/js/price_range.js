@@ -1,24 +1,33 @@
-const sliderOne = document.getElementById("range-1"); // 최솟값 range slider
-const sliderTwo = document.getElementById("range-2"); // 최댓값 range slider
-const displayValOne = document.getElementById("min_price"); // 최솟값 표시되는 곳
-const displayValTwo = document.getElementById("max_price"); // 최댓값 표시되는 곳
-const minGap = 5;  // 최솟값과 최댓값의 간격을 최대한으로 좁혔을 때의 limit (여기서는 5로 설정)
+const inputLeft = document.getElementById("input-left");
+const inputRight = document.getElementById("input-right");
 
-// 최솟값 range slider 함수
-function slideMin(){
-    // 최댓값 - 최솟값이 minGap(=5) 이하일 경우 최솟값의 value는 최댓값 - minGap
-    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
-        sliderOne.value = parseInt(sliderTwo.value) - minGap;
-    }
-    // slider가 움직일 때 마다 실시간으로 최솟값 표시
-    displayValOne.textContent = sliderOne.value;
-}
-// 최댓값 range slider 함수
-function slideMax(){
-     // 최댓값 - 최솟값이 minGap(=5) 이하일 경우 최댓값의 value는 최솟값 + minGap
-    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
-        sliderTwo.value = parseInt(sliderOne.value) + minGap;
-    }
-    // slider가 움직일 때 마다 실시간으로 최댓값 표시
-    displayValTwo.textContent = sliderTwo.value;    
-}
+const thumbLeft = document.querySelector(".slider > .thumb.left");
+const thumbRight = document.querySelector(".slider > .thumb.right");
+const range = document.querySelector(".slider > .range");
+
+const setLeftValue = () => {
+	const_this = inputLeft;
+	const [min,max] = [praseInt(_this.min),parseInt(_this.max)];
+	
+	_this.value = Math.min(parseInt(_this.value),parseInt(inputRight.value)-1);
+	
+	const percent = ((_this.value - min) / (max - min)) * 100;
+	thumbLeft.style.left = percent + "%";
+	range.style.left = percent+"%";
+};
+
+const setRightValue = () => {
+  const _this = inputRight;
+  const [min, max] = [parseInt(_this.min), parseInt(_this.max)];
+  
+  // 교차되지 않게, 1을 더해준 건 완전히 겹치기보다는 어느 정도 간격을 남겨두기 위해.
+  _this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) + 1);
+  
+  // input, thumb 같이 움직이도록
+  const percent = ((_this.value - min) / (max - min)) * 100;
+  thumbRight.style.right = 100 - percent + "%";
+  range.style.right = 100 - percent + "%";
+};
+
+inputLeft.addEventListener("input", setLeftValue);
+inputRight.addEventListener("input", setRightValue);

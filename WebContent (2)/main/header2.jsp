@@ -14,6 +14,7 @@
 <script src="../js/rs_menu.js"></script>
 <script src="../js/rs_pic.js"></script>
 <script src="../js/topten.js"></script>
+<script src="../js/price_range"></script>
 
 <link rel="stylesheet" type="text/css" href="../css/main.css">
 <link rel="stylesheet" type="text/css" href="../css/top.css">

@@ -38,16 +38,79 @@
 	background-color: transparent;
 }
 
+
 .price_range{
-	margin-left: 15px;
-	color: black;
+	position: relative;
+	width: 90%;
+	max-width: 500px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	
 }
-.price_range input{
-	width: 163px;
+
+.price_range h4{
+	margin-left: 10px;
 }
+
+.slider{
+	position: relative;
+	z-index: 1;
+	height: 10px;
+	margin: 0 15px;
+}
+.slider > .track{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+	background-color: #6200ee;
+}
+
+.silder > .thumb{
+	position: absolute;
+	z-index: 3;
+	width: 30px;
+	height: 30px;
+	background-color: #6200ee;
+	border-radius: 50%;
+}
+
+.slider > .tumb.left{
+	left: 25%;
+	transform: translate(15px,-10px);
+} 
+.slider > .thumb.right{
+	right: 25%;
+	transform: translate(15px, -10px);
+}
+
+input[type="range"]{
+	position: absolute;
+	pointer-events: none;
+	-webkit-appearance: none;
+	z-index: 2;
+	height: 10px;
+	width: 100%;
+	opacity: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+	pointer-events: all;
+	width: 30px;
+	height: 30px;
+	border-radius: 0;
+	border: 0 none;
+	background-color: red;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+
 .price_input{
 	display: flex;
-	
+	margin-left: 15px;
 }
 
 .price_input input{
@@ -171,6 +234,10 @@
 }
 
 #yes{
+	display: none;
+}
+
+#yes2{
 	display: none;
 }
 

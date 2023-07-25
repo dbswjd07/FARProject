@@ -5,42 +5,61 @@
 	<div class="filter">
 	 <div class="filter_top">
 		<h3>필터</h3>
-		<button type="reset" class="reset">
+		<button type="reset" Id="reset">
 		필터 초기화
 		</button>
 	 </div>
 	 <hr>
+	 
 	 <div class="price_range">
-	 	<h4>가격대</h4>
-	 	<input type="range" min="10000" max="16000000" step="10000"> 
-	 	<div class="price_input">
-	 		<input type="text" name="min_price" value="10000">
-	 		~
-	 		<input type="text" name="max_price" value="16000000">
-	 	</div>
+	 <h4>가격대</h4>
+	  <div class="multi-range-slider">
+	  
+	   <input type="range" id="input-min" min="10000" max="16000000" value="25" />
+	   <input type="range" id="input-max" min="10000" max="16000000" value="75" />
+	   
+	   <div class="slider">
+	    <div class="track"></div>
+	    <div class="range"></div>
+	    <div class="thumb left"></div>
+	    <div class="thumb right"></div>
+	   
+	   </div>
+	   
+	  </div>
+	 	
+	 	
+	 	
 	 	 
 	 	
 	 </div>
+	 
+	 <div class="price_input">
+	 		<input type="text" name="min_price" value="10000">
+	 		~
+	 		<input type="text" name="max_price" value="16000000">
+	 	</div> 
 	 <hr>
 	 <div class="apoint_option">
 	 <h4>예약옵션</h4>
 	 	<table>
 	 		<tr> 
-	 			<td><input type="checkbox" id="checkAll"> 전체 </td>
+	 			<td><input type="checkbox" id="checkAll" name="all" onclick="allselect(this.checked);"> 
+	 			<label>전체</label> </td>
 	 		</tr>
 	 		
 	 		<tr>
-	 			<td><input type="checkbox" class="chk"> 확정예약</td>
+	 			<td><input type="checkbox" name="check-in" ><label> 확정예약</label> </td>
 	 			
 	 		</tr>
 	 		<tr>
-	 			<td><input type="checkbox" class="chk"> Early Check-in</td>
+	 			<td><input type="checkbox" name="check-in" ><label> Early Check-in</label> </td>
 	 		</tr>
 	 		<tr>
-	 			<td><input type="checkbox" class="chk"> Late &nbsp;Check-in</td>
+	 			<td><input type="checkbox" name="check-in"><label> Late &nbsp;Check-in</label> </td>
 	 		</tr>
 	 		<tr>
-	 			<td><input type="checkbox" class="chk"> Late &nbsp;Check-out</td>
+	 			<td><input type="checkbox" name="check-in"><label> Late &nbsp;Check-out</label> </td>
 	 		</tr>
 	 	</table>
 	 	
@@ -50,31 +69,39 @@
 	 <div class="star">
 	 	<h4>성급</h4>
 	 		
-	 		<input type="checkbox"> 전체
+	 		<input type="checkbox" name="all2" onclick="allselect2(this.checked);">
+	 		<label>전체</label>
 	 		<br>
-	 		<input type="checkbox"> 5성급
+	 		<input type="checkbox" name="star"> 
+	 		<label>5성급</label>
 	 		<br>
-	 		<input type="checkbox"> 4성급
+	 		<input type="checkbox" name="star"> 
+	 		<label>4성급</label>
 	 		<br>
-	 		<input type="checkbox"> 3성급
+	 		<input type="checkbox" name="star"> 
+	 		<label>3성급</label>
 	 		<br>
-	 		<input type="checkbox"> 2성급
+	 		<input type="checkbox" name="star"> 
+	 		<label>2성급</label>
 	 		<br>
-	 		<input type="checkbox"> 1성급
+	 		<input type="checkbox" name="star"> 
+	 		<label>1성급</label>
 	 		<br>
-	 		<input type="checkbox"> 성급없음
+	 		<input type="checkbox" name="star"> 
+	 		<label>성급없음</label>
 	 		
 	 </div>
 	 <hr>
 	 <div class="theme">
 	 	<h4>테마</h4>
-	 		<input type="checkbox"> 전체
+	 		<input type="checkbox" name="all3" onclick="allselect3(this.checked);">
+	 		<label>전체</label> 
 	 		<br>
-	 		<input type="checkbox"> 반려동물
+	 		<input type="checkbox" name="theme"><label> 반려동물</label> 
 	 		<br>
-	 		<input type="checkbox"> 커플
+	 		<input type="checkbox" name="theme"> <label>커플</label>
 	 		<br>
-	 		<input type="checkbox"> 가족
+	 		<input type="checkbox" name="theme"> <label>가족</label>
 	 		
 	 </div>
 	 <hr>
@@ -182,9 +209,9 @@
 			<p>리뷰 1886</p>
 			
 			<div class="shop_JJim">
-				<button type="button" onclick="imgToggle()">
-				<img src="../images/acc/NoJJim.png" id="no">
-				<img src="../images/acc/YesJJim.png" id="yes">
+				<button type="button" onclick="imgToggle2()">
+				<img src="../images/acc/NoJJim.png" id="no2">
+				<img src="../images/acc/YesJJim.png" id="yes2">
 			</button>
 			</div>
 		</div>
@@ -677,7 +704,7 @@
 		
 		</div>
 	<hr>
-	<p class="page_number">1 | 2 | 3 | 4 | 5 </p>
+	<p class="page_number"> 1 | 2 | 3 | 4 | 5 </p>
 	
 	</div>
 	
