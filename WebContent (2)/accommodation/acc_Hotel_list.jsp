@@ -97,7 +97,7 @@
 	 		<input type="checkbox" name="all3" onclick="allselect3(this.checked);">
 	 		<label>전체</label> 
 	 		<br>
-	 		<input type="checkbox" name="theme"><label> 반려동물</label> 
+	 		<input type="checkbox" name="theme"> <label>반려동물</label> 
 	 		<br>
 	 		<input type="checkbox" name="theme"> <label>커플</label>
 	 		<br>

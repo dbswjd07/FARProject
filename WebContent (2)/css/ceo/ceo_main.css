@@ -1,0 +1,72 @@
+@charset "UTF-8";
+#ceo_main{
+	margin-bottom: 50px;
+}
+#ceo_event{
+	height: 150px;
+	width: 100%;
+	background-color: blue;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#ceo_middle{
+	height: 120px;
+	width:100%; 
+	display: flex;
+	margin-top: 20px;
+	
+	
+}
+
+#ceo_list{
+	margin-left: 20px;
+	margin-right: 40px;
+	display: flex;
+}
+
+.ceo_list{
+	height: 100px;
+	width: 100px;
+	margin: 0 20px 0 20px;
+	border-radius: 10px;
+	text-align: center;
+	margin-right: 60px;
+	
+}
+
+
+.ceo_list p{
+	
+	color: black;
+	font-weight: bold;
+}
+
+.ceo_list img{
+	margin-top:10px;
+	margin-bottom: -10px;
+	height: 50px;
+	width: 50px;
+}
+
+#login{
+	height: 100px;
+	width: 40%;
+	background-color: pink;
+	text-align: center;
+	margin-right: 20px;
+	border: 1px solid;
+	
+}
+
+#notice{
+	height: 100px;
+	width: 250px;
+	background-color: blue;
+	margin-right: 20px;
+}
+
+
+
+
+
